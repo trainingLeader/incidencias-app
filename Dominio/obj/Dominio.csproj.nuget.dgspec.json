@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {}
+    "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
+    "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
+        "projectPath": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "D:\\NetCore\\incidencias-app\\Dominio\\obj\\",
+        "outputPath": "d:\\NetCore\\incidencias-app\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -37,6 +37,20 @@
       "frameworks": {
         "net7.0": {
           "targetAlias": "net7.0",
+          "dependencies": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "itext7.pdfhtml": {
+              "target": "Package",
+              "version": "[5.0.1, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
