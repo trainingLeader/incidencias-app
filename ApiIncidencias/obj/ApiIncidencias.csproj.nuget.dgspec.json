@@ -1,17 +1,151 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj": {}
+    "d:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj": {}
   },
   "projects": {
-    "D:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj": {
+    "d:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj",
+        "projectUniqueName": "d:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj",
         "projectName": "ApiIncidencias",
-        "projectPath": "D:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj",
+        "projectPath": "d:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "D:\\NetCore\\incidencias-app\\ApiIncidencias\\obj\\",
+        "outputPath": "d:\\NetCore\\incidencias-app\\ApiIncidencias\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Microsoft.AspNetCore.OpenApi": {
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.5.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
+        "projectName": "Aplicacion",
+        "projectPath": "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
+        "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
+        "outputPath": "d:\\NetCore\\incidencias-app\\Aplicacion\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
+                "projectPath": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj"
+              },
+              "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
+        "projectName": "Dominio",
+        "projectPath": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
+        "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
+        "outputPath": "d:\\NetCore\\incidencias-app\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -38,13 +172,17 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
-            "Microsoft.AspNetCore.OpenApi": {
+            "FluentValidation.AspNetCore": {
+              "target": "Package",
+              "version": "[11.3.0, )"
+            },
+            "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[7.0.10, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "itext7.pdfhtml": {
               "target": "Package",
-              "version": "[6.5.0, )"
+              "version": "[5.0.1, )"
             }
           },
           "imports": [
@@ -59,9 +197,79 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.400\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+        "projectName": "Persistencia",
+        "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+        "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
+        "outputPath": "d:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net7.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net7.0": {
+            "targetAlias": "net7.0",
+            "projectReferences": {
+              "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
+                "projectPath": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net7.0": {
+          "targetAlias": "net7.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[7.0.10, )"
             },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[7.0.10, )"
+            },
+            "Pomelo.EntityFrameworkCore.MySql": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
