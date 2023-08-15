@@ -1,8 +1,7 @@
 namespace Dominio;
 
-public class Matricula
+public class Matricula : BaseEntityA
 {
-    public int IdMatricula { get; set; }
     public string IdPersonaFk { get; set; }
     public Persona Persona { get; set; }
     public int IdSalonFk { get; set; }

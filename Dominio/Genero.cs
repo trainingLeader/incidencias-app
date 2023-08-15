@@ -1,8 +1,8 @@
 namespace Dominio;
 
-public class Genero
+public class Genero : BaseEntityA
 {
-    public int IdGenero { get; set; }
+    
     public string NombreGenero { get; set; }
     public ICollection<Persona> Personas { get; set; }
 }

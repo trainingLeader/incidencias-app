@@ -2,9 +2,7 @@ D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Aplicacion.deps.json
 D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Aplicacion.dll
 D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Aplicacion.pdb
 D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Dominio.dll
-D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Persistencia.dll
 D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Dominio.pdb
-D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Persistencia.pdb
 D:\NetCore\incidencias-app\Aplicacion\obj\Debug\net7.0\Aplicacion.csproj.AssemblyReference.cache
 D:\NetCore\incidencias-app\Aplicacion\obj\Debug\net7.0\Aplicacion.GeneratedMSBuildEditorConfig.editorconfig
 D:\NetCore\incidencias-app\Aplicacion\obj\Debug\net7.0\Aplicacion.AssemblyInfoInputs.cache
@@ -15,3 +13,5 @@ D:\NetCore\incidencias-app\Aplicacion\obj\Debug\net7.0\Aplicacion.dll
 D:\NetCore\incidencias-app\Aplicacion\obj\Debug\net7.0\refint\Aplicacion.dll
 D:\NetCore\incidencias-app\Aplicacion\obj\Debug\net7.0\Aplicacion.pdb
 D:\NetCore\incidencias-app\Aplicacion\obj\Debug\net7.0\ref\Aplicacion.dll
+D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Persistencia.dll
+D:\NetCore\incidencias-app\Aplicacion\bin\Debug\net7.0\Persistencia.pdb

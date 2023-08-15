@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {}
+    "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {}
   },
   "projects": {
     "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
@@ -71,14 +71,14 @@
         }
       }
     },
-    "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+    "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+        "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "D:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
+        "outputPath": "d:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -110,12 +110,6 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
             },

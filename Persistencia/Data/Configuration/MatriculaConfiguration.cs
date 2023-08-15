@@ -12,8 +12,8 @@ namespace Persistencia.Data.Configuration
             // utilizando el objeto 'builder'.
             builder.ToTable("matricula");
 
-            builder.HasKey(e => e.IdMatricula);
-            builder.Property(e => e.IdMatricula);
+            builder.HasKey(e => e.Id);
+            builder.Property(e => e.Id);
         }
     }
 }

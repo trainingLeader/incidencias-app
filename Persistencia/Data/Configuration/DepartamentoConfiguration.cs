@@ -12,8 +12,8 @@ namespace Persistencia.Data.Configuration
             // utilizando el objeto 'builder'.
             builder.ToTable("departamento");
 
-            builder.HasKey(e => e.IdDep);
-            builder.Property(e => e.IdDep)
+            builder.HasKey(e => e.Id);
+            builder.Property(e => e.Id)
             .HasMaxLength(3);
 
             builder.Property(p => p.NombreDep)

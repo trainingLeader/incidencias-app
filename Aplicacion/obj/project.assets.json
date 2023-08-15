@@ -5240,11 +5240,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
+      "projectUniqueName": "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
       "projectName": "Aplicacion",
-      "projectPath": "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
+      "projectPath": "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
       "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-      "outputPath": "d:\\NetCore\\incidencias-app\\Aplicacion\\obj\\",
+      "outputPath": "D:\\NetCore\\incidencias-app\\Aplicacion\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5262,8 +5262,8 @@
             "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
               "projectPath": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj"
             },
-            "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
+            "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
             }
           }
         }

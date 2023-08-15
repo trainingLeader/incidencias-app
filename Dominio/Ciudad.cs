@@ -1,8 +1,7 @@
 namespace Dominio;
 
-public class Ciudad
+public class Ciudad : BaseEntity
 {
-    public string IdCiudad { get; set; }
     public string NombreCiudad { get; set; }
     public string IdDepFk { get; set; }
     public Departamento Departamento { get; set; }

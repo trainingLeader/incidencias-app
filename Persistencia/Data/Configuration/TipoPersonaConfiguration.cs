@@ -12,8 +12,8 @@ namespace Persistencia.Data.Configuration
             // utilizando el objeto 'builder'.
             builder.ToTable("tipopersona");
 
-            builder.HasKey(e => e.IdTipoPersona);
-            builder.Property(e => e.IdTipoPersona);
+            builder.HasKey(e => e.Id);
+            builder.Property(e => e.Id);
 
             builder.Property(p => p.DescripcionTipoPersona)
             .IsRequired()

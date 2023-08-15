@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj": {}
+    "D:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj": {}
   },
   "projects": {
-    "d:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj": {
+    "D:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj",
+        "projectUniqueName": "D:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj",
         "projectName": "ApiIncidencias",
-        "projectPath": "d:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj",
+        "projectPath": "D:\\NetCore\\incidencias-app\\ApiIncidencias\\ApiIncidencias.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "d:\\NetCore\\incidencias-app\\ApiIncidencias\\obj\\",
+        "outputPath": "D:\\NetCore\\incidencias-app\\ApiIncidencias\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -26,8 +26,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj": {
-                "projectPath": "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj"
+              "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj": {
+                "projectPath": "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj"
               }
             }
           }
@@ -84,14 +84,14 @@
         }
       }
     },
-    "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj": {
+    "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
+        "projectUniqueName": "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
         "projectName": "Aplicacion",
-        "projectPath": "d:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
+        "projectPath": "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "d:\\NetCore\\incidencias-app\\Aplicacion\\obj\\",
+        "outputPath": "D:\\NetCore\\incidencias-app\\Aplicacion\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -109,8 +109,8 @@
               "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
                 "projectPath": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj"
               },
-              "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
+              "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -211,14 +211,14 @@
         }
       }
     },
-    "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+    "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+        "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "D:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
+        "outputPath": "d:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -250,12 +250,6 @@
           "targetAlias": "net7.0",
           "dependencies": {
             "Microsoft.EntityFrameworkCore": {
-              "target": "Package",
-              "version": "[7.0.10, )"
-            },
-            "Microsoft.EntityFrameworkCore.Tools": {
-              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-              "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
             },

@@ -1,5 +1,4 @@
 D:\NetCore\incidencias-app\Persistencia\bin\Debug\net7.0\Persistencia.deps.json
-D:\NetCore\incidencias-app\Persistencia\bin\Debug\net7.0\Persistencia.runtimeconfig.json
 D:\NetCore\incidencias-app\Persistencia\bin\Debug\net7.0\Persistencia.dll
 D:\NetCore\incidencias-app\Persistencia\bin\Debug\net7.0\Persistencia.pdb
 D:\NetCore\incidencias-app\Persistencia\bin\Debug\net7.0\Dominio.dll
@@ -13,5 +12,4 @@ D:\NetCore\incidencias-app\Persistencia\obj\Debug\net7.0\Persistencia.csproj.Cop
 D:\NetCore\incidencias-app\Persistencia\obj\Debug\net7.0\Persistencia.dll
 D:\NetCore\incidencias-app\Persistencia\obj\Debug\net7.0\refint\Persistencia.dll
 D:\NetCore\incidencias-app\Persistencia\obj\Debug\net7.0\Persistencia.pdb
-D:\NetCore\incidencias-app\Persistencia\obj\Debug\net7.0\Persistencia.genruntimeconfig.cache
 D:\NetCore\incidencias-app\Persistencia\obj\Debug\net7.0\ref\Persistencia.dll
