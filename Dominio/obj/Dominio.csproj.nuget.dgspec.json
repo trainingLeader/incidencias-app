@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {}
+    "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {}
   },
   "projects": {
-    "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
+    "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
+        "projectUniqueName": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
         "projectName": "Dominio",
-        "projectPath": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
+        "projectPath": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "d:\\NetCore\\incidencias-app\\Dominio\\obj\\",
+        "outputPath": "D:\\NetCore\\incidencias-app\\Dominio\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"

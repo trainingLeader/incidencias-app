@@ -5259,11 +5259,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
-              "projectPath": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj"
+            "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
+              "projectPath": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj"
             },
-            "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
-              "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
+            "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+              "projectPath": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
             }
           }
         }

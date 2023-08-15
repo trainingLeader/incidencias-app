@@ -1,0 +1,12 @@
+D:\NetCore\incidencias-app\Dominio\bin\Debug\net7.0\Dominio.deps.json
+D:\NetCore\incidencias-app\Dominio\bin\Debug\net7.0\Dominio.dll
+D:\NetCore\incidencias-app\Dominio\bin\Debug\net7.0\Dominio.pdb
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\Dominio.csproj.AssemblyReference.cache
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\Dominio.GeneratedMSBuildEditorConfig.editorconfig
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\Dominio.AssemblyInfoInputs.cache
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\Dominio.AssemblyInfo.cs
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\Dominio.csproj.CoreCompileInputs.cache
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\Dominio.dll
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\refint\Dominio.dll
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\Dominio.pdb
+D:\NetCore\incidencias-app\Dominio\obj\Debug\net7.0\ref\Dominio.dll
