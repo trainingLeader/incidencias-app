@@ -17,7 +17,7 @@ namespace Persistencia
         public DbSet<Departamento> Departamentos { get; set; }
         public DbSet<Pais> Paises { get; set; }
         public DbSet<Genero> Generos { get; set; }
-
+        public DbSet<Rol> Roles { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Pais>().HasIndex(idx => idx.NombrePais).IsUnique();

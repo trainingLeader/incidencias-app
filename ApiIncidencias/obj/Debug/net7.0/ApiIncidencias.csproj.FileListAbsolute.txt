@@ -71,3 +71,7 @@ D:\NetCore\incidencias-app\ApiIncidencias\obj\Debug\net7.0\refint\ApiIncidencias
 D:\NetCore\incidencias-app\ApiIncidencias\obj\Debug\net7.0\ApiIncidencias.pdb
 d:\NetCore\incidencias-app\ApiIncidencias\obj\Debug\net7.0\ApiIncidencias.genruntimeconfig.cache
 d:\NetCore\incidencias-app\ApiIncidencias\obj\Debug\net7.0\ref\ApiIncidencias.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\AutoMapper.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\AspNetCoreRateLimit.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
