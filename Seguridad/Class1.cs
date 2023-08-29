@@ -1,4 +1,4 @@
-﻿namespace Aplicacion;
+﻿namespace Seguridad;
 
 public class Class1
 {

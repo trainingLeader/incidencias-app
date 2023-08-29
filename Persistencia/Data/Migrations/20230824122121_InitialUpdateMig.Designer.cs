@@ -11,8 +11,8 @@ using Persistencia;
 namespace Persistencia.Data.Migrations
 {
     [DbContext(typeof(ApiIncidenciasContext))]
-    [Migration("20230821213018_RolesUsuariosV2Mig")]
-    partial class RolesUsuariosV2Mig
+    [Migration("20230824122121_InitialUpdateMig")]
+    partial class InitialUpdateMig
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -184,7 +184,7 @@ namespace Persistencia.Data.Migrations
 
                     b.HasIndex("RolId");
 
-                    b.ToTable("PersonaRoles");
+                    b.ToTable("personaroles", (string)null);
                 });
 
             modelBuilder.Entity("Dominio.Rol", b =>
@@ -252,6 +252,21 @@ namespace Persistencia.Data.Migrations
                     b.HasIndex("IdSalonFk");
 
                     b.ToTable("trainersalon", (string)null);
+                });
+
+            modelBuilder.Entity("PersonaRol", b =>
+                {
+                    b.Property<string>("PersonasId")
+                        .HasColumnType("varchar(20)");
+
+                    b.Property<int>("RolesId")
+                        .HasColumnType("int");
+
+                    b.HasKey("PersonasId", "RolesId");
+
+                    b.HasIndex("RolesId");
+
+                    b.ToTable("PersonaRol");
                 });
 
             modelBuilder.Entity("Dominio.Ciudad", b =>
@@ -348,6 +363,21 @@ namespace Persistencia.Data.Migrations
                     b.Navigation("Persona");
 
                     b.Navigation("Salon");
+                });
+
+            modelBuilder.Entity("PersonaRol", b =>
+                {
+                    b.HasOne("Dominio.Persona", null)
+                        .WithMany()
+                        .HasForeignKey("PersonasId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Dominio.Rol", null)
+                        .WithMany()
+                        .HasForeignKey("RolesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
                 });
 
             modelBuilder.Entity("Dominio.Ciudad", b =>

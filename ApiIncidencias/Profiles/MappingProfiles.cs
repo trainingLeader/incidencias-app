@@ -13,6 +13,8 @@ public class MappingProfiles : Profile
         CreateMap<Departamento,DepartamentoDto>().ReverseMap();
 
         CreateMap<Pais,PaisxDepDto>().ReverseMap();
+        //CreateMap<Persona,RegisterDto>().ReverseMap();
+
 
         /*CreateMap<Estado,EstadoDto>()
         .ForMember(dest => dest.IdEstado, opt => opt.MapFrom(src => src.IdCod))

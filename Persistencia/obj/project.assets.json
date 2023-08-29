@@ -5216,24 +5216,31 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\developer\\.nuget\\packages\\": {}
+    "C:\\Users\\developer\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+      "projectUniqueName": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
       "projectName": "Persistencia",
-      "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+      "projectPath": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
       "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-      "outputPath": "d:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
+      "outputPath": "D:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\developer\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net7.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {

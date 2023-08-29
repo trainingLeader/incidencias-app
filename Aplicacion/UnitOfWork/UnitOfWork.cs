@@ -8,6 +8,8 @@ namespace Aplicacion.UnitOfWork
         private readonly ApiIncidenciasContext context;
         private PaisRepository _paises;
         private RolRepository _roles;
+        private PersonaRepository _personas;
+        private IUsuarioRepository _usuarios;
         public UnitOfWork(ApiIncidenciasContext _context)
         {
             context = _context;
@@ -32,6 +34,28 @@ namespace Aplicacion.UnitOfWork
                     _roles = new RolRepository(context);
                 }
                 return _roles;
+            }
+        }
+        public IPersonaRepository Personas
+        {
+            get
+            {
+                if (_personas == null)
+                {
+                    _personas = new PersonaRepository(context);
+                }
+                return _personas;
+            }
+        }
+        public IUsuarioRepository Usuarios
+        {
+            get
+            {
+                if (_usuarios == null)
+                {
+                    _usuarios = new UsuarioRepository(context);
+                }
+                return _usuarios;
             }
         }
         public async Task<int> SaveAsync()

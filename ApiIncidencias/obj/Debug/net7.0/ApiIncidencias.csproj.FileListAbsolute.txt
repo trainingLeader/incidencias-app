@@ -75,3 +75,6 @@ D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\AutoMapper.dll
 D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\AspNetCoreRateLimit.dll
 D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Microsoft.AspNetCore.Mvc.Versioning.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Seguridad.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Seguridad.pdb

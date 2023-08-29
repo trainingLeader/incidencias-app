@@ -1,5 +1,6 @@
 using Dominio;
 using Dominio.Interfaces;
+using Microsoft.EntityFrameworkCore;
 using Persistencia;
 
 namespace Aplicacion.Repository;
@@ -12,4 +13,5 @@ public class PersonaRepository : GenericRepository<Persona>, IPersonaRepository
     {
         _context = context;
     }
+
 }

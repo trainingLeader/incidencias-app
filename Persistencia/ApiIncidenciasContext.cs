@@ -5,7 +5,7 @@ namespace Persistencia
 {
     public class ApiIncidenciasContext : DbContext
     {
-        public ApiIncidenciasContext(DbContextOptions<ApiIncidenciasContext> options) : base(options)
+        public ApiIncidenciasContext(DbContextOptions options) : base(options)
         {
         }
         public DbSet<Ciudad> Ciudades { get; set; }
@@ -18,6 +18,8 @@ namespace Persistencia
         public DbSet<Pais> Paises { get; set; }
         public DbSet<Genero> Generos { get; set; }
         public DbSet<Rol> Roles { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Pais>().HasIndex(idx => idx.NombrePais).IsUnique();

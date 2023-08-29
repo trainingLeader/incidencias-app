@@ -4,11 +4,13 @@ using ApiIncidencias.Helpers;
 using AutoMapper;
 using Dominio;
 using Dominio.Interfaces;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ApiIncidencias.Controllers;
 [ApiVersion("1.0")]
 [ApiVersion("1.1")]
+
 public class PaisController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
@@ -28,7 +30,8 @@ public class PaisController : BaseApiController
         return Ok(regiones);
     }*/
     [HttpGet]
-     [MapToApiVersion("1.0")]
+    [Authorize]
+    [MapToApiVersion("1.0")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async  Task<ActionResult<IEnumerable<PaisDto>>> Get()
@@ -49,10 +52,14 @@ public class PaisController : BaseApiController
     [HttpGet("{id}")]
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
-    public async Task<IActionResult> Get(string id)
+    [ProducesResponseType(StatusCodes.Status404NotFound)]
+    public async Task<ActionResult<PaisDto>> Get(string id)
     {
-        var region = await _unitOfWork.Paises.GetByIdAsync(id);
-        return Ok(region);
+        var pais = await _unitOfWork.Paises.GetByIdAsync(id);
+        if (pais == null){
+            return NotFound();
+        }
+        return _mapper.Map<PaisDto>(pais);
     }
     /*[HttpPost]
     [ProducesResponseType(StatusCodes.Status201Created)]

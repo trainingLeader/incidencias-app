@@ -135,9 +135,6 @@ namespace Persistencia.Data.Migrations
                     b.Property<string>("ApellidoPaterno")
                         .HasColumnType("longtext");
 
-                    b.Property<string>("Email")
-                        .HasColumnType("longtext");
-
                     b.Property<string>("IdCiudadFk")
                         .HasColumnType("varchar(3)");
 
@@ -152,12 +149,6 @@ namespace Persistencia.Data.Migrations
                         .HasMaxLength(50)
                         .HasColumnType("varchar(50)");
 
-                    b.Property<string>("Password")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("Username")
-                        .HasColumnType("longtext");
-
                     b.HasKey("Id");
 
                     b.HasIndex("IdCiudadFk");
@@ -167,21 +158,6 @@ namespace Persistencia.Data.Migrations
                     b.HasIndex("IdTipoPerFk");
 
                     b.ToTable("persona", (string)null);
-                });
-
-            modelBuilder.Entity("Dominio.PersonaRoles", b =>
-                {
-                    b.Property<string>("UsuarioId")
-                        .HasColumnType("varchar(20)");
-
-                    b.Property<int>("RolId")
-                        .HasColumnType("int");
-
-                    b.HasKey("UsuarioId", "RolId");
-
-                    b.HasIndex("RolId");
-
-                    b.ToTable("PersonaRoles");
                 });
 
             modelBuilder.Entity("Dominio.Rol", b =>
@@ -251,6 +227,49 @@ namespace Persistencia.Data.Migrations
                     b.ToTable("trainersalon", (string)null);
                 });
 
+            modelBuilder.Entity("Dominio.Usuario", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.Property<string>("Password")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("Username")
+                        .IsRequired()
+                        .HasMaxLength(200)
+                        .HasColumnType("varchar(200)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Username", "Email")
+                        .IsUnique()
+                        .HasDatabaseName("IX_MiIndice");
+
+                    b.ToTable("usuario", (string)null);
+                });
+
+            modelBuilder.Entity("Dominio.UsuariosRoles", b =>
+                {
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("RolId")
+                        .HasColumnType("int");
+
+                    b.HasKey("UsuarioId", "RolId");
+
+                    b.HasIndex("RolId");
+
+                    b.ToTable("UsuariosRoles");
+                });
+
             modelBuilder.Entity("Dominio.Ciudad", b =>
                 {
                     b.HasOne("Dominio.Departamento", "Departamento")
@@ -309,25 +328,6 @@ namespace Persistencia.Data.Migrations
                     b.Navigation("TipoPersona");
                 });
 
-            modelBuilder.Entity("Dominio.PersonaRoles", b =>
-                {
-                    b.HasOne("Dominio.Rol", "Rol")
-                        .WithMany("PersonaRoles")
-                        .HasForeignKey("RolId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.HasOne("Dominio.Persona", "Persona")
-                        .WithMany("PersonaRoles")
-                        .HasForeignKey("UsuarioId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Persona");
-
-                    b.Navigation("Rol");
-                });
-
             modelBuilder.Entity("Dominio.TrainerSalon", b =>
                 {
                     b.HasOne("Dominio.Persona", "Persona")
@@ -345,6 +345,25 @@ namespace Persistencia.Data.Migrations
                     b.Navigation("Persona");
 
                     b.Navigation("Salon");
+                });
+
+            modelBuilder.Entity("Dominio.UsuariosRoles", b =>
+                {
+                    b.HasOne("Dominio.Rol", "Rol")
+                        .WithMany("UsuariosRoles")
+                        .HasForeignKey("RolId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Dominio.Usuario", "Usuario")
+                        .WithMany("UsuariosRoles")
+                        .HasForeignKey("UsuarioId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Rol");
+
+                    b.Navigation("Usuario");
                 });
 
             modelBuilder.Entity("Dominio.Ciudad", b =>
@@ -371,14 +390,12 @@ namespace Persistencia.Data.Migrations
                 {
                     b.Navigation("Matriculas");
 
-                    b.Navigation("PersonaRoles");
-
                     b.Navigation("TrainerSalones");
                 });
 
             modelBuilder.Entity("Dominio.Rol", b =>
                 {
-                    b.Navigation("PersonaRoles");
+                    b.Navigation("UsuariosRoles");
                 });
 
             modelBuilder.Entity("Dominio.Salon", b =>
@@ -391,6 +408,11 @@ namespace Persistencia.Data.Migrations
             modelBuilder.Entity("Dominio.TipoPersona", b =>
                 {
                     b.Navigation("Personas");
+                });
+
+            modelBuilder.Entity("Dominio.Usuario", b =>
+                {
+                    b.Navigation("UsuariosRoles");
                 });
 #pragma warning restore 612, 618
         }

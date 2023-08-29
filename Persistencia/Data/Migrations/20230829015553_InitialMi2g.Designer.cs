@@ -11,8 +11,8 @@ using Persistencia;
 namespace Persistencia.Data.Migrations
 {
     [DbContext(typeof(ApiIncidenciasContext))]
-    [Migration("20230821210909_RolesUsuariosMig")]
-    partial class RolesUsuariosMig
+    [Migration("20230829015553_InitialMi2g")]
+    partial class InitialMi2g
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -132,6 +132,12 @@ namespace Persistencia.Data.Migrations
                         .HasMaxLength(20)
                         .HasColumnType("varchar(20)");
 
+                    b.Property<string>("ApellidoMaterno")
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("ApellidoPaterno")
+                        .HasColumnType("longtext");
+
                     b.Property<string>("IdCiudadFk")
                         .HasColumnType("varchar(3)");
 
@@ -226,23 +232,11 @@ namespace Persistencia.Data.Migrations
 
             modelBuilder.Entity("Dominio.Usuario", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("varchar(255)");
-
-                    b.Property<string>("ApellidoMaterno")
-                        .HasColumnType("longtext");
-
-                    b.Property<string>("ApellidoPaterno")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
 
                     b.Property<string>("Email")
-                        .IsRequired()
-                        .HasMaxLength(200)
-                        .HasColumnType("varchar(200)");
-
-                    b.Property<string>("Nombres")
                         .IsRequired()
                         .HasMaxLength(200)
                         .HasColumnType("varchar(200)");
@@ -262,8 +256,8 @@ namespace Persistencia.Data.Migrations
 
             modelBuilder.Entity("Dominio.UsuariosRoles", b =>
                 {
-                    b.Property<string>("UsuarioId")
-                        .HasColumnType("varchar(255)");
+                    b.Property<int>("UsuarioId")
+                        .HasColumnType("int");
 
                     b.Property<int>("RolId")
                         .HasColumnType("int");
