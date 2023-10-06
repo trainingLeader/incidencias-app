@@ -1,5 +1,6 @@
 using System.Text;
 using ApiIncidencias.Helpers;
+using ApiIncidencias.Helpers.Errors;
 using ApiIncidencias.Services;
 using Aplicacion.Contratos;
 using Aplicacion.Repository;
@@ -31,7 +32,18 @@ public static class ApplicationServiceExtension
         //services.AddScoped(typeof(IGenericRepository<>),typeof(GenericRepository<>));
         //services.AddScoped<IPaisInterface,PaisRepository>();
         //services.AddScoped<ITipoPersona,TipoPersonaRepository>(); //
-        services.AddScoped<IJwtGenerador,JwtGenerador>();
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("using Microsoft.IdentityModel.Tokens.El tema mas importante del bacend no funciono.System.Demo"));
+        services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer(opt =>
+        {
+            opt.TokenValidationParameters = new TokenValidationParameters
+            {
+                ValidateIssuerSigningKey = true,
+                IssuerSigningKey = key,
+                ValidateAudience = false,
+                ValidateIssuer = false
+            };
+        });
+        services.AddScoped<IJwtGenerador, JwtGenerador>();
         services.AddScoped<IPasswordHasher<Usuario>, PasswordHasher<Usuario>>();
         services.AddScoped<IUserService, UserService>();
         services.AddScoped<IUnitOfWork, UnitOfWork>();
@@ -73,7 +85,7 @@ public static class ApplicationServiceExtension
 
         });
     }
-/*    public static void AddJwt(this IServiceCollection services, IConfiguration configuration)
+    public static void AddJwt(this IServiceCollection services, IConfiguration configuration)
     {
         //Configuration from AppSettings
         services.Configure<JWT>(configuration.GetSection("JWT"));
@@ -100,8 +112,8 @@ public static class ApplicationServiceExtension
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"]))
                 };
             });
-    } */
-       public static void AddJwt(this IServiceCollection services, IConfiguration configuration)
+    }
+    /*public static void AddJwt(this IServiceCollection services, IConfiguration configuration)
     {
         //Configuration from AppSettings
         services.Configure<JWT>(configuration.GetSection("JWT"));
@@ -128,5 +140,25 @@ public static class ApplicationServiceExtension
                     IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(configuration["JWT:Key"]))
                 };
             });
+    }*/
+    public static void AddValidationErrors(this IServiceCollection services)
+    {
+        services.Configure<ApiBehaviorOptions>(options =>
+        {
+            options.InvalidModelStateResponseFactory = actionContext =>
+            {
+
+                var errors = actionContext.ModelState.Where(u => u.Value.Errors.Count > 0)
+                                                .SelectMany(u => u.Value.Errors)
+                                                .Select(u => u.ErrorMessage).ToArray();
+
+                var errorResponse = new ApiValidation()
+                {
+                    Errors = errors
+                };
+
+                return new BadRequestObjectResult(errorResponse);
+            };
+        });
     }
 }

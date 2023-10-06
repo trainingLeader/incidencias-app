@@ -162,7 +162,7 @@ public class UserService : IUserService
         return datosUsuarioDto;
 
     }
-    private JwtSecurityToken CreateJwtToken(Usuario usuario)
+    /*private JwtSecurityToken CreateJwtToken(Usuario usuario)
     {
         var roles = usuario.Roles;
         var roleClaims = new List<Claim>();
@@ -188,7 +188,7 @@ public class UserService : IUserService
             expires: DateTime.UtcNow.AddMinutes(_jwt.DurationInMinutes),
             signingCredentials: signingCredentials);
         return jwtSecurityToken;
-    }
+    }*/
 
     public async Task<LoginDto> UserLogin(LoginDto model)
     {

@@ -1,6 +1,7 @@
 
 using ApiIncidencias.Dtos;
 using ApiIncidencias.Helpers;
+using ApiIncidencias.Helpers.Errors;
 using AutoMapper;
 using Dominio;
 using Dominio.Interfaces;
@@ -10,7 +11,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace ApiIncidencias.Controllers;
 [ApiVersion("1.0")]
 [ApiVersion("1.1")]
-
 public class PaisController : BaseApiController
 {
     private readonly IUnitOfWork _unitOfWork;
@@ -37,6 +37,8 @@ public class PaisController : BaseApiController
     public async  Task<ActionResult<IEnumerable<PaisDto>>> Get()
     {
         var paises = await _unitOfWork.Paises.GetAllAsync();
+
+        //var paises = await _unitOfWork.Paises.GetAllAsync();
         return _mapper.Map<List<PaisDto>>(paises);
     }
     [HttpGet]
@@ -57,7 +59,7 @@ public class PaisController : BaseApiController
     {
         var pais = await _unitOfWork.Paises.GetByIdAsync(id);
         if (pais == null){
-            return NotFound();
+            return NotFound(new ApiResponse(404,"El pais solicitado no existe."));
         }
         return _mapper.Map<PaisDto>(pais);
     }
@@ -82,7 +84,7 @@ public class PaisController : BaseApiController
         await _unitOfWork.SaveAsync();
         if (pais == null)
         {
-            return BadRequest();
+            return BadRequest(new ApiResponse(400));
         }
         paisDto.Id = pais.Id;
         return CreatedAtAction(nameof(Post),new {id= paisDto.Id}, paisDto);
@@ -105,7 +107,7 @@ public class PaisController : BaseApiController
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<PaisDto>> Put(string id, [FromBody]PaisDto paisDto){
         if(paisDto == null)
-            return NotFound();
+            return NotFound(new ApiResponse(404,"El pais solicitado no existe."));
         var paises = _mapper.Map<Pais>(paisDto);
         _unitOfWork.Paises.Update(paises);
         await _unitOfWork.SaveAsync();
@@ -118,7 +120,7 @@ public class PaisController : BaseApiController
     public async Task<IActionResult> Delete(string id){
         var pais = await _unitOfWork.Paises.GetByIdAsync(id);
         if(pais == null){
-            return NotFound();
+            return NotFound(new ApiResponse(404,"El pais solicitado no existe."));
         }
         _unitOfWork.Paises.Remove(pais);
         await _unitOfWork.SaveAsync();

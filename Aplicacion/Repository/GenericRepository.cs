@@ -36,7 +36,8 @@ public class GenericRepository<T> : IGenericRepository<T> where T : BaseEntity
 
     public virtual async Task<IEnumerable<T>> GetAllAsync()
     {
-        return await _context.Set<T>().ToListAsync();
+        //return await _context.Set<T>().ToListAsync();
+        return (IEnumerable<T>)await _context.Paises.FromSqlRaw("SELECT * FROM pais").ToListAsync();
     }
 
     public virtual async Task<T> GetByIdAsync(int id)

@@ -1,13 +1,10 @@
-
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using Aplicacion.Contratos;
 using Dominio;
 using Microsoft.IdentityModel.Tokens;
-
 namespace Seguridad.TokenSeguridad;
-
 public class JwtGenerador : IJwtGenerador
 {
     public string CrearToken(Usuario usuario)
@@ -15,7 +12,7 @@ public class JwtGenerador : IJwtGenerador
         var claims = new List<Claim>{
             new Claim(JwtRegisteredClaimNames.NameId, usuario.Username)
         };
-        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context"));
+        var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("using Microsoft.IdentityModel.Tokens.El tema mas importante del bacend no funciono.System.Demo"));
         var credenciales = new SigningCredentials(key,SecurityAlgorithms.HmacSha512Signature);
         var tokenDescripcion = new SecurityTokenDescriptor
         {

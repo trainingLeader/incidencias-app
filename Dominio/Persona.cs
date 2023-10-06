@@ -6,7 +6,6 @@ public class Persona : BaseEntity
     public string NombrePersona { get; set; }
     public string ApellidoPaterno { get; set; }
     public string ApellidoMaterno { get; set; }
-
     public int IdGeneroFk { get; set; }
     public Genero Genero { get; set; }
     public string IdCiudadFk { get; set; }

@@ -5051,11 +5051,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
       "projectName": "Dominio",
-      "projectPath": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
+      "projectPath": "d:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj",
       "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-      "outputPath": "D:\\NetCore\\incidencias-app\\Dominio\\obj\\",
+      "outputPath": "d:\\NetCore\\incidencias-app\\Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -35,8 +35,8 @@
               "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj": {
                 "projectPath": "D:\\NetCore\\incidencias-app\\Aplicacion\\Aplicacion.csproj"
               },
-              "d:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj": {
-                "projectPath": "d:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj"
+              "D:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj": {
+                "projectPath": "D:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj"
               }
             }
           }
@@ -76,6 +76,10 @@
               "suppressParent": "All",
               "target": "Package",
               "version": "[7.0.10, )"
+            },
+            "Serilog.AspNetCore": {
+              "target": "Package",
+              "version": "[7.0.0, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
@@ -136,8 +140,8 @@
               "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj": {
                 "projectPath": "D:\\NetCore\\incidencias-app\\Dominio\\Dominio.csproj"
               },
-              "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
-                "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
+              "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+                "projectPath": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj"
               }
             }
           }
@@ -244,14 +248,14 @@
         }
       }
     },
-    "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
+    "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+        "projectUniqueName": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
         "projectName": "Persistencia",
-        "projectPath": "d:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
+        "projectPath": "D:\\NetCore\\incidencias-app\\Persistencia\\Persistencia.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "d:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
+        "outputPath": "D:\\NetCore\\incidencias-app\\Persistencia\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -317,14 +321,14 @@
         }
       }
     },
-    "d:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj": {
+    "D:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj",
+        "projectUniqueName": "D:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj",
         "projectName": "Seguridad",
-        "projectPath": "d:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj",
+        "projectPath": "D:\\NetCore\\incidencias-app\\Seguridad\\Seguridad.csproj",
         "packagesPath": "C:\\Users\\developer\\.nuget\\packages\\",
-        "outputPath": "d:\\NetCore\\incidencias-app\\Seguridad\\obj\\",
+        "outputPath": "D:\\NetCore\\incidencias-app\\Seguridad\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

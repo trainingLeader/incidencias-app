@@ -78,3 +78,12 @@ D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Microsoft.AspNetCore.
 D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Microsoft.IdentityModel.Abstractions.dll
 D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Seguridad.dll
 D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Seguridad.pdb
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.AspNetCore.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.Extensions.Hosting.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.Extensions.Logging.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.Formatting.Compact.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.Settings.Configuration.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.Sinks.Console.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.Sinks.Debug.dll
+D:\NetCore\incidencias-app\ApiIncidencias\bin\Debug\net7.0\Serilog.Sinks.File.dll
